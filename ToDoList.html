@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="main.css">
+        <title>To Do List</title>
+    </head>
+    <body>
+        <h2>To-Do List</h2> 
+        <div class="wrapper">
+                      
+            <div class="add_button modalButton">
+                <button type="submit" id="myBtn">Add New Task</button>
+            </div>
+            <div class="todo-list">
+                <table class="tasks">       
+                    <tbody></tbody>            
+                </table>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                <form action="#" id="addForm">
+                    <div class="forms">
+                        <label for="new-task">Enter a new task</label>
+                        <input type="text" id="new-task">
+                    </div>  
+                    <div class="modalButton">
+                         <button type="submit">Add</button> 
+                    </div>                                          
+                </form>
+            </div>    
+        </div>
+
+        <!-- The Edit Modal -->
+        <div id="myEditModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+
+                    <form action="#" id="editForm">
+                        <div class="forms">
+                            <label for="new-edit-task">Update the task</label>
+                            <input type="text" id="new-edit-task">
+
+                            <label for="process">Choose process development</label>
+                                <select  name="process" id="process">
+                                    <option value="In Proggres">In Progress</option>
+                                    <option value="To Do">To Do</option>
+                                    <option value="Completed">Completed</option>
+                                </select>
+                        </div>  
+                        <div class="modalButton">
+                            <button type="submit">Update</button> 
+                        </div>                                           
+                    </form>
+            </div>    
+        </div>
+    </body>
+
+    <script src="list.js"></script>
+    <script src="modal.js"></script>
+</html>
+
